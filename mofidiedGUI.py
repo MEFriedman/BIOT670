@@ -3,6 +3,7 @@
 import tkinter as tk
 window= tk.Tk()
 
+import ttips
 
 border_effects = { #creates dictioary whose keys are name of relief effects
     "flat": tk.FLAT,
@@ -77,7 +78,9 @@ btn_import = tk.Button(
     text ='Import',
     font=("Courier", 34),
     bg= "bisque3",
-    command = lambda:open_file()) 
+    command = lambda:open_file())
+
+ttips.CreateToolTip(frame_imp_btn, "Please import your .bam file")
 
 C.pack()
 lab_import.pack()
