@@ -42,6 +42,7 @@ lab_welcome= tk.Label( #WElcome label here
     text= "Welcome to the fusion gene visualizer!", font=("Courier", 34),
     foreground= "black", # set the text color to blue, shortcut fg
     background = "plum1", #set background color, shortcut bg
+
 )
 lab_welcome.pack() 
 lab_import= tk.Label( #directions here
@@ -50,7 +51,6 @@ lab_import= tk.Label( #directions here
     fg= "black",
     bg ="tan1"
 )
-
 
 #to create import button to navigate to file
 from tkinter import * 
